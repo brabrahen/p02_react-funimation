@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0; 
+}
+
+.todo {
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+    background-image: url(../images/wallp.jpg);
+    height: 47vw;
+}
+
+.header {
+    background-color: #8C0F1A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2rem;
+    width: 90vw;
+    height: 10vw;
+    color: white;
+    box-shadow: 0.5rem 0.5rem 0.5rem #BF7582;
+    
+}
+
