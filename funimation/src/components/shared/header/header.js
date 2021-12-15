@@ -8,14 +8,12 @@ const Nav = () => {
     <div className="todo">
       <section className="header">
         <div className="txt-header">
-          <span>
-            <GiBeastEye />
-            Funimation
-          </span>
-          <form>
-          <label className="search"><MdManageSearch /></label>
-          <input id="pesquisa" className="pesquisa" type="text" placeholder="Pesquise seu anime aqui"></input>      
-          </form>
+          <ul> 
+            <a className="nav_header1" href="#"><GiBeastEye />Funimation</a>
+            <a className="nav_header" href="#">Login</a>
+            <a className="nav_header" href="#">Cadastro</a>
+            <a className="nav_header" href="#">Minha Conta</a>
+          </ul>
         </div>
       </section>
     </div>
