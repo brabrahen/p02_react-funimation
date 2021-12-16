@@ -1,33 +1,35 @@
-import { useState, useEffect } from 'react';
-import axios from 'axios';
-import Header from '../.././components/shared/header/header';
-import Card from '../.././components/shared/card/card';
+import { useState, useEffect } from "react";
+import axios from "axios";
+import Header from "../.././components/shared/header/header";
+import Card from "../.././components/shared/card/card";
 
 const Home = () => {
-    const [animes, setAnimes] = useState([]);
-    const [montado, setMontado] = useState(false);
+  const [animes, setAnimes] = useState([]);
+  const [montado, setMontado] = useState(false);
 
-    const getAnime = async () => {
-        await axios.get('/plant/findMany')
-        .then(response => {
-            console.log(response.data)
-        })
-    }
+  const getAnime = async () => {
+    await axios.get("/plant/findMany").then((response) => {
+      if (montado) {
+        setAnimes(response.data);
+      }
+    });
+  };
 
+  useEffect(() => {
+    setMontado(true);
+    getAnime();
+  }, [montado]);
 
-    return(
-        <div>
-            <Header />
-            <div className='cards_home'>
-                <Card 
-                // image="https://p2.trrsf.com/image/fget/cf/1200/675/middle/images.terra.com/2021/09/10/demon-slayer-capa.png"
-                // imageAlt="DS"
-                // name="Demon Slayer"
-                
-                />
-            </div>
-        </div>
-    )
-}
+  return (
+    <div>
+      <Header />
+      <div className="cards_home">
+        {animes.map((item) => (
+          <Card image={item.imageUrl} name={item.commonName} />
+        ))}
+      </div>
+    </div>
+  );
+};
 
-export default Home
+export default Home;

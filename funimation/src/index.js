@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import Home from './pages/home/home';
+import Login from './pages/login/login';
 import axios from 'axios';
 
 axios.defaults.baseURL = 'https://plants-api-1.herokuapp.com/';
