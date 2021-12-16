@@ -25,7 +25,7 @@ const Home = () => {
       <Header />
       <div className="cards_home">
         {animes.map((item) => (
-          <Card image={item.imageUrl} name={item.commonName} />
+          <Card image={item.imageUrl} name={item.commonName} key={item.id} />
         ))}
       </div>
     </div>
