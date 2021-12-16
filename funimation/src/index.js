@@ -2,7 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import Home from './pages/home/home';
+import axios from 'axios';
 
+axios.defaults.baseURL = 'https://plants-api-1.herokuapp.com/';
+axios.defaults.headers.post[ 'Content-Type' ] = 'application/json';
 
 ReactDOM.render(
   <React.StrictMode>

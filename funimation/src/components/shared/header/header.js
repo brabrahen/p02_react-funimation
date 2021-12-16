@@ -1,6 +1,5 @@
 import "./header.css";
 import React from "react";
-import { MdManageSearch } from "react-icons/md";
 import { GiBeastEye } from "react-icons/gi";
 
 const Nav = () => {
