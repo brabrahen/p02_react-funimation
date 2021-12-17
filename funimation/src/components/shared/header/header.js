@@ -8,7 +8,7 @@ const Nav = () => {
       <section className="header">
         <div className="txt-header">
           <ul> 
-            <a className="nav_header1" href="#"><GiBeastEye />Funimation</a>
+            <a className="nav_header1" href=""><GiBeastEye />Funimation</a>
             <a className="nav_header" href="#">Login</a>
             <a className="nav_header" href="#">Cadastro</a>
             <a className="nav_header" href="#">Minha Conta</a>

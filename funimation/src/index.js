@@ -4,6 +4,7 @@ import './index.css';
 import Home from './pages/home/home';
 import Login from './pages/login/login';
 import Anime from './pages/anime/anime';
+import Cadastro from './pages/cadastro/cadastro';
 import axios from 'axios';
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
@@ -16,7 +17,8 @@ ReactDOM.render(
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/login" element={<Login />} />
-      <Route path="/anime" element={<Anime />} />
+      <Route path="/detanime" element={<Anime />} />
+      <Route path="/cadastro" element={<Cadastro />} />
     </Routes>
     </BrowserRouter>
   </React.StrictMode>,

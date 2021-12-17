@@ -1,4 +1,23 @@
-.card{
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5vw;
+    width: 23vw;
+    height: 18vw;
+    background-color: white;
+    border-radius: 1rem;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     
+   
+}
+
+.card_image{
+    width: 18vw;
+    height: 13vw;
+    padding-bottom: 1.3vw;
+    border-radius: 1rem;
+   
   
 }

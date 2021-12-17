@@ -1,4 +1,4 @@
-.login{
+.cadastro{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -13,29 +13,30 @@
     box-shadow: 0.5rem 0.5rem 0.5rem #8C0F1A;
 }
 
-.login_form {
+.cadastro_form {
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding: 1vw;
+    padding: 0.5vw;
 }
 
-.login_email {
+.cadastro_email {
     padding: 0.2vw;
     margin: 0.8vw;
-    width: 15vw;
+    width: 17vw;
     border-radius: 0.5rem;
 }
 
-.login_senha {
+.cadastro_senha {
     padding: 0.2vw;
     margin-bottom: 7px;
-    width: 15vw;
+    width: 17vw;
     border-radius: 0.5rem;  
 }
+
 
 .login_login {
     align-items: center;
     border-radius: 0.5rem;
-    width: 6vw;  
+    width: 6vw;
 }
