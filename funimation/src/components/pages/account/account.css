@@ -1,0 +1,25 @@
+.perfil {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 75vw;
+    height: 20vw;
+    border-radius: 2rem;
+    background-color: ivory;
+    margin-left: 13vw;
+    margin-top: 5vw;
+}
+    
+
+
+.capa_perfil {
+    display: flex;
+    margin-bottom: 8vw;
+}
+
+.foto_perfil {
+    display: flex;
+    flex-direction: column;
+    margin-right: 8vw;
+
+}

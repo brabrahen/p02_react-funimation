@@ -5,6 +5,7 @@ import Home from '../src/components/pages/home/home';
 import Login from '../src/components/pages/login/login';
 import Anime from '../src/components/pages/anime/anime';
 import Cadastro from '../src/components/pages/cadastro/cadastro';
+import Account from '../src/components/pages/account/account';
 import axios from 'axios';
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
@@ -19,6 +20,7 @@ ReactDOM.render(
       <Route path="/login" element={<Login />} />
       <Route path="/detanime" element={<Anime />} />
       <Route path="/cadastro" element={<Cadastro />} />
+      <Route path="/acc" element={<Account />}></Route> 
     </Routes>
     </BrowserRouter>
   </React.StrictMode>,
