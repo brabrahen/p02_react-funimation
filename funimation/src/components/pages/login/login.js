@@ -1,7 +1,8 @@
 import "./login.css";
-import Header from "../.././components/shared/header/header";
+import Header from "../../shared/header/header";
 import { useState } from "react";
-import axios from "axios";
+import axios from 'axios'
+
 
 const Login = () => {
   const [email, setEmail] = useState("");

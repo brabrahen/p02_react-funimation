@@ -10,8 +10,8 @@ const Card = (props) => {
 
     return(
         <div className="card" onClick={detalhesAnime}>
-            <img className="card_image" src={props.image} alt={props.imageAlt} />
-            <span>{props.name}</span>
+            <img className="card_image" src={props.cover} alt={props.title} />
+            <span>{props.title}</span>
         </div>
     )
 }

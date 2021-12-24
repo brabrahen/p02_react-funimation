@@ -1,14 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import Home from './pages/home/home';
-import Login from './pages/login/login';
-import Anime from './pages/anime/anime';
-import Cadastro from './pages/cadastro/cadastro';
+import Home from '../src/components/pages/home/home';
+import Login from '../src/components/pages/login/login';
+import Anime from '../src/components/pages/anime/anime';
+import Cadastro from '../src/components/pages/cadastro/cadastro';
 import axios from 'axios';
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
-axios.defaults.baseURL = 'https://plants-api-1.herokuapp.com/';
+axios.defaults.baseURL = 'https://streaming-api-1.herokuapp.com';
 axios.defaults.headers.post[ 'Content-Type' ] = 'application/json';
 
 ReactDOM.render(

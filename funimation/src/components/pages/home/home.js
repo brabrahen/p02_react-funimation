@@ -1,14 +1,14 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
-import Header from "../.././components/shared/header/header";
-import Card from "../.././components/shared/card/card";
+import Header from "../../shared/header/header";
+import Card from "../../shared/card/card";
 
 const Home = () => {
   const [animes, setAnimes] = useState([]);
   const [montado, setMontado] = useState(false);
 
   const getAnime = async () => {
-    await axios.get("/plant/findMany").then((response) => {
+    await axios.get("/movie/findMany").then((response) => {
       if (montado) {
         setAnimes(response.data);
       }
@@ -23,9 +23,9 @@ const Home = () => {
   return (
     <div>
       <Header />
-      <div className="cards_home">
+      <div >
         {animes.map((item) => (
-          <Card image={item.imageUrl} name={item.commonName} key={item.id} />
+          <Card className="cards_home" image={item.image} name={item.name} key={item.id} />
         ))}
       </div>
     </div>

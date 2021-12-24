@@ -1,4 +1,4 @@
-import Header from "../.././components/shared/header/header";
+import Header from "../../shared/header/header";
 import './cadastro.css'
 
 const Cadastro = ()=> {
